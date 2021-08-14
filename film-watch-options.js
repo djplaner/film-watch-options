@@ -12,6 +12,17 @@ import {LitElement, html, css} from 'lit';
  * @slot - This element has a slot
  * @csspart button - The button
  */
+
+export const isValidUrl = (url) => {
+  try {
+    new URL(url);
+  } catch (e) {
+    console.error(e);
+    return false;
+  }
+  return true;
+};
+
 export class FilmWatchOptions extends LitElement {
   static get styles() {
     return css`
@@ -38,6 +49,11 @@ export class FilmWatchOptions extends LitElement {
       //sheetId: {type: String},
 
       /**
+       * URL for JSON file
+       */
+      jsonUrl: {type: String},
+
+      /**
        * url for the film
        */
       filmUrl: {type: String},
@@ -48,8 +64,8 @@ export class FilmWatchOptions extends LitElement {
     super();
     this.filmName = this.innerHTML;
     this.sheetId = '';
+    this.jsonUrl = '';
     this.filmUrl = ''
-
   }
 
   /**
@@ -58,14 +74,17 @@ export class FilmWatchOptions extends LitElement {
    */
 
   async getFilmData() {
-    console.log(`sheet id is ${this.sheetId}`);
-    if ( this.sheetId===''){
-      return;
+    console.log('------------ getFilmData');
+    console.log(`jsonURl is ${this.jsonUrl}`);
+
+    if ( this.jsonUrl!=="" && ! isValidUrl(this.jsonUrl) ){
+      console.error(`Invalid jsonURL ${this.jsonUrl}`);
+      return false;
     }
 //    const SHEET_JSON_URL=`https://spreadsheets.google.com/feeds/list/${this.sheetId}/1/public/values?alt=json`;
-    const SHEET_JSON_URL=`http://localhost:8000/dev/cmm17_2215.json`;
+//    const SHEET_JSON_URL=`http://localhost:8000/dev/cmm17_2215.json`;
 
-    const response = await fetch( SHEET_JSON_URL ); 
+    const response = await fetch( this.jsonUrl ); 
     this.filmData = await response.json();
 
     console.log(this.filmData)
@@ -76,17 +95,22 @@ export class FilmWatchOptions extends LitElement {
       this.filmUrl = this.filmData[this.filmNameEsc].url;
       console.log("it's in there" );
     } else {
-      console.log(`sorry but it's not there`);
+      console.log("sorry but it's not there");
     } 
   }
 
   render() {
     this.filmNameEsc = this.filmName.trim();
-    this.getFilmData();
 
-    if (this.sheetId==='' && this.filmUrl==='') {
+    // only get data, if there's something to get (sheetId/jsonURL)
+    // or data needed i.e. nothing in filmUrl
+    if (this.sheetId==='' && this.filmUrl==='' && this.jsonUrl===''){
       console.error("<film-watch-options> Error: no Google spreadsheet or filmUrl defined");
+    } else {
+      this.getFilmData();
     }
+
+    // No filmname - fail
     if (this.filmName === '') {
       console.error("<film-watch-options> Error: no film name provided");
       return html` 
@@ -114,6 +138,7 @@ export class FilmWatchOptions extends LitElement {
     </div>`;
     }
 
+    // oop, no info
     return html`
       <div class="filmWatchingOptions">
       <div class="filmWatchingOptionsImage">
