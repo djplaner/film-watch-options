@@ -1,6 +1,11 @@
-# LitElement JavaScript starter
+# film-watch-options
 
-This project includes a sample component using LitElement with JavaScript.
+Web component that provides different representations to watch a film. The representation is based on the
+- the tag content - the film's name
+    e.g. `<film-watch-options sheetId="">The String</film-watch-options>`
+- a Google Spreadsheet - containing a list of films and availability
+
+Still very much a work in progress
 
 ## Setup
 

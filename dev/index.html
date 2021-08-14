@@ -3,10 +3,10 @@
 <html>
   <head>
     <meta charset="utf-8" />
-    <title>&lt;my-element> Demo</title>
+    <title>&lt;film-watch-options> Demo</title>
     <script src="../node_modules/@webcomponents/webcomponentsjs/webcomponents-loader.js"></script>
     <script src="../node_modules/lit/polyfill-support.js"></script>
-    <script type="module" src="../my-element.js"></script>
+    <script type="module" src="../film-watch-options.js"></script>
     <style>
       p {
         border: solid 1px blue;
@@ -15,8 +15,26 @@
     </style>
   </head>
   <body>
-    <my-element>
-      <p>This is child content</p>
-    </my-element>
+    <h3>
+        Missing film name and spreadsheet id 
+    </h3>
+        <film-watch-options></film-watch-options> 
+
+    <h3>
+        film name but not spreadsheet id 
+    </h3>
+        <film-watch-options>The Sting</film-watch-options>
+
+    <h3>Film name and spreadsheet id</h3>
+      <film-watch-options sheetId="1xJvMG27jFzemmiJlzPGvLjOR0k_2soOadUDGMTCv0II">
+        Animal Kingdom
+      </film-watch-options>
+
+    <h3>Film name and URL</h3>
+    <film-watch-options filmUrl="https://web.microsoftstream.com/video/843a0d9b-5240-44ab-9c9c-edba9e17d457">
+      American Beauty
+    </film-watch-options>
+
+
   </body>
 </html>
