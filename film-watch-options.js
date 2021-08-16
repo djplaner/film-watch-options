@@ -33,6 +33,29 @@ export class FilmWatchOptions extends LitElement {
         padding: 16px;
         max-width: 800px;
       }
+
+      .filmWatchingOptions  { 
+        box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23) !important; 
+        display: flex; 
+        flex-direction: row; 
+        flex-wrap: wrap;
+        margin: 1em 0;
+        margin-left: auto;
+        margin-right: auto;
+        width: 95%; 
+        border-radius: 1em;
+        padding: 1em;
+      } 
+
+      .filmWatchingOptionsImage {
+        max-width: 100%;
+        max-height: 100%;
+      }
+
+      .instructions {
+        flex: 6;
+        margin-left: 1em;
+      }
     `;
   }
 
@@ -231,11 +254,6 @@ class filmViewFactory {
       <span class="gu_adviceLabel">Help with video:</span> <span class="gu_adviceValue"><a href="https://docs.microsoft.com/en-us/stream/portal-watch">Watch videos on Microsoft Stream</a></span>
       </p>`
     };
-
-    console.log('----------------- convert media ');
-    console.log(
-      `filmName **${this.film.filmNameEsc}** url **${this.film.filmURl}**`
-    );
 
     // Haven't figured out how to generate an embeddable player for Kanopy yet
     if (this.film.filmUrl.match(/griffith.kanopy.com/)) {
