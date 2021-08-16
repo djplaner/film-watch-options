@@ -193,7 +193,7 @@ class filmViewFactory {
         </div>
         <div class="instructions">
           <h3>${this.film.filmNameEsc}</h3>
-          <p>We've been unable to provide a copy of <em>${this.film.filmName}</em>.</p>
+          <p>We've been unable to provide a copy of <em>${this.film.filmNameEsc}</em>.</p>
           <p>
             <a
               href="https://www.justwatch.com/au/search?q=${this.film.filmNameEsc}"
