@@ -1,132 +1,155 @@
-[
-	{
-	  "Film Title": "Shadow of a Doubt",
-	  "Week": 1,
-	  "URL": "https://archive.org/details/shadowofadoubt1943_202003"
-	},
-	{
-	  "Film Title": "Rear Window",
-	  "Week": 1,
-	  "URL": "http://libraryproxy.griffith.edu.au/login?url=https://griffith.kanopy.com/video/rear-window"
-	},
-	{
-	  "Film Title": "Nosferatu",
-	  "Week": 2,
-	  "URL": "https://griffith.kanopy.com/video/nosferatu"
-	},
-	{
-	  "Film Title": "Some Like it Hot",
-	  "Week": 2,
-	  "URL": "https://web.microsoftstream.com/video/818f1cf2-9a0a-485c-94f6-966b33adb89b"
-	},
-	{
-	  "Film Title": "Imitation of Life",
-	  "Week": 3,
-	  "URL": "https://web.microsoftstream.com/video/54ff2bc2-2a11-42e4-841a-ca5e93fbd9f4"
-	},
-	{
-	  "Film Title": "Tokyo Story",
-	  "Week": 3,
-	  "URL": "https://griffith.kanopy.com/video/tokyo-story-tokyo-monogatari"
-	},
-	{
-	  "Film Title": "Citizen Kane",
-	  "Week": 4,
-	  "URL": "https://web.microsoftstream.com/video/89d8b460-7315-4aa0-ad81-af9cefc67c85"
-	},
-	{
-	  "Film Title": "Casablanca",
-	  "Week": 4,
-	  "URL": "https://web.microsoftstream.com/video/7e16b93c-f4b5-49b9-b506-80b65ac9d0aa"
-	},
-	{
-	  "Film Title": "Breakfast at Tiffany's",
-	  "Week": 5,
-	  "URL": "https://griffith.kanopy.com/video/breakfast-tiffanys"
-	},
-	{
-	  "Film Title": "The Birds",
-	  "Week": 5,
-	  "URL": "https://web.microsoftstream.com/video/da9e902e-e23a-4f63-ad1e-9658d1f96659"
-	},
-	{
-	  "Film Title": "The Maltese Falcon",
-	  "Week": 7,
-	  "URL": "https://web.microsoftstream.com/video/df0439b4-5394-4e36-9091-ff4a9a18230c"
-	},
-	{
-	  "Film Title": "The General",
-	  "Week": 7,
-	  "URL": "https://griffith.kanopy.com/video/general"
-	},
-	{
-	  "Film Title": "Chinatown",
-	  "Week": 8,
-	  "URL": "https://web.microsoftstream.com/video/8da4881d-8c13-45e1-a3a6-cd29ea33433a"
-	},
-	{
-	  "Film Title": "The Wizard of Oz",
-	  "Week": 8,
-	  "URL": "https://web.microsoftstream.com/video/930e18ad-3577-4b5c-a55f-22d7a6098602"
-	},
-	{
-	  "Film Title": "Run Lola Run",
-	  "Week": 9,
-	  "URL": "https://web.microsoftstream.com/video/4817f935-30bf-40cd-baeb-a917acc54ae3"
-	},
-	{
-	  "Film Title": "� bout de souffle",
-	  "Week": 9,
-	  "URL": "https://web.microsoftstream.com/video/c64aaaf0-45cf-4b5d-be98-5b6b23895307"
-	},
-	{
-	  "Film Title": "Russian Ark",
-	  "Week": 10,
-	  "URL": "https://griffith.kanopy.com/video/russian-ark"
-	},
-	{
-	  "Film Title": "Inception",
-	  "Week": 10,
-	  "URL": "https://web.microsoftstream.com/video/e2332ba4-2f7e-443b-af00-91d8fcd22b0d"
-	},
-	{
-	  "Film Title": "Spherical Coordinates",
-	  "Week": 10,
-	  "URL": "https://www.youtube.com/watch?v=r_17-_9-IUs"
-	},
-	{
-	  "Film Title": "Morphing in Willow",
-	  "Week": 10,
-	  "URL": "https://www.criticalcommons.org/Members/jbutler/clips/willow_animal_morph.flv/view"
-	},
-	{
-	  "Film Title": "Doctor Jekyll and Mr Hyde Transformation",
-	  "Week": 10,
-	  "URL": "https://www.youtube.com/watch?v=uN4Di8DEPf8"
-	},
-	{
-	  "Film Title": "Pulp Fiction - Don�t be a square",
-	  "Week": 10,
-	  "URL": "https://www.youtube.com/watch?v=mi6tQthPDWc"
-	},
-	{
-	  "Film Title": "The Tulse Luper Suitcases",
-	  "Week": 10,
-	  "URL": "https://www.youtube.com/watch?v=6lWSZ08ocpM"
-	},
-	{
-	  "Film Title": "Bullitt - The Chase",
-	  "Week": 10,
-	  "URL": "https://www.youtube.com/watch?v=31JgMAHVeg0"
-	},
-	{
-	  "Film Title": "Forest Gump Feather Ending",
-	  "Week": 10,
-	  "URL": "https://www.youtube.com/watch?v=gqIXmbgihuQ"
-	},
-	{
-	  "Film Title": "Fight Club Opening Sequence",
-	  "Week": 10,
-	  "URL": "https://www.youtube.com/watch?v=Ze9-wg9k7AU"
-	}
-       ]
+{
+"Shadow of a Doubt": {
+	"filmTitle": "Shadow of a Doubt",
+	"week":	1,
+	"url": "https://archive.org/details/shadowofadoubt1943_202003"
+},
+"Rear Window": {
+	"filmTitle": "Rear Window",
+	"week":	1,
+	"url": "http://libraryproxy.griffith.edu.au/login?url=https://griffith.kanopy.com/video/rear-window"
+
+},
+"Nosferatu": {
+	"filmTitle": "Nosferatu",
+	"week":	2,
+	"url": "https://griffith.kanopy.com/video/nosferatu"
+
+},
+"Some Like it Hot": {
+	"filmTitle": "Some Like it Hot",
+	"week":	2,
+	"url": "https://web.microsoftstream.com/video/818f1cf2-9a0a-485c-94f6-966b33adb89b"
+},
+"Imitation of Life": {
+	"filmTitle": "Imitation of Life",
+	"week":	3,
+	"url": "https://web.microsoftstream.com/video/54ff2bc2-2a11-42e4-841a-ca5e93fbd9f4"
+
+},
+"Tokyo Story": {
+	"filmTitle": "Tokyo Story",
+	"week":	3,
+	"url": "https://griffith.kanopy.com/video/tokyo-story-tokyo-monogatari"
+
+},
+"Citizen Kane": {
+	"filmTitle": "Citizen Kane",
+	"week":	4,
+	"url": "https://web.microsoftstream.com/video/89d8b460-7315-4aa0-ad81-af9cefc67c85"
+},
+"Casablanca": {
+	"filmTitle": "Casablanca",
+	"week":	4,
+	"url": "https://web.microsoftstream.com/video/7e16b93c-f4b5-49b9-b506-80b65ac9d0aa"
+
+},
+"Breakfast at Tiffany's": {
+	"filmTitle": "Breakfast at Tiffany's",
+	"week":	5,
+	"url": "https://griffith.kanopy.com/video/breakfast-tiffanys"
+
+},
+"The Birds": {
+	"filmTitle": "The Birds",
+	"week":	5,
+	"url": "https://web.microsoftstream.com/video/da9e902e-e23a-4f63-ad1e-9658d1f96659"
+
+},
+"The Maltese Falcon": {
+	"filmTitle": "The Maltese Falcon",
+	"week":	6,
+	"url": "https://web.microsoftstream.com/video/df0439b4-5394-4e36-9091-ff4a9a18230c"
+
+},
+"The General": {
+	"filmTitle": "The General",
+	"week":	7,
+	"url": "https://griffith.kanopy.com/video/general"
+
+},
+"Chinatown": {
+	"filmTitle": "Chinatown",
+	"week":	8,
+	"url": "https://web.microsoftstream.com/video/8da4881d-8c13-45e1-a3a6-cd29ea33433a"
+
+},
+"The Wizard of Oz": {
+	"filmTitle": "The Wizard of Oz",
+	"week":	7,
+	"url": "https://web.microsoftstream.com/video/930e18ad-3577-4b5c-a55f-22d7a6098602"
+
+},
+"Run Lola Run": {
+	"filmTitle": "Run Lola Run",
+	"week":	9,
+	"url": "https://web.microsoftstream.com/video/4817f935-30bf-40cd-baeb-a917acc54ae3"
+
+},
+"À bout de souffle": {
+	"filmTitle": "À bout de souffle",
+	"week":	9,
+	"url": "https://web.microsoftstream.com/video/c64aaaf0-45cf-4b5d-be98-5b6b23895307"
+
+},
+"Russian Ark": {
+	"filmTitle": "Russian Ark",
+	"week":	10,
+	"url": "https://griffith.kanopy.com/video/russian-ark"
+
+},
+"Inception": {
+	"filmTitle": "Inception",
+	"week":	10,
+	"url": "https://web.microsoftstream.com/video/e2332ba4-2f7e-443b-af00-91d8fcd22b0d"
+
+},
+"Spherical Coordinates": {
+	"filmTitle": "Spherical Coordinates",
+	"week":	10,
+	"url": "https://www.youtube.com/watch?v=r_17-_9-IUs"
+
+},
+"Morphing in Willow": {
+	"filmTitle": "Morphing in Willow",
+	"week":	10,
+	"url": "https://www.criticalcommons.org/Members/jbutler/clips/willow_animal_morph.flv/view"
+
+},
+"Doctor Jekyll and Mr Hyde Transformation": {
+	"filmTitle": "Doctor Jekyll and Mr Hyde Transformation",
+	"week":	10,
+	"url": "https://www.youtube.com/watch?v=uN4Di8DEPf8"
+
+},
+"Pulp Fiction - Don’t be a square": {
+	"filmTitle": "Pulp Fiction - Don’t be a square",
+	"week":	10,
+	"url": "https://www.youtube.com/watch?v=mi6tQthPDWc"
+
+},
+"The Tulse Luper Suitcases": {
+	"filmTitle": "The Tulse Luper Suitcases",
+	"week":	10,
+	"url": "https://www.youtube.com/watch?v=6lWSZ08ocpM"
+
+},
+"Bullitt - The Chase": {
+	"filmTitle": "Bullitt - The Chase",
+	"week":	10,
+	"url": "https://www.youtube.com/watch?v=31JgMAHVeg0"
+
+},
+"Forest Gump Feather Ending": {
+	"filmTitle": "Forest Gump Feather Ending",
+	"week":	10,
+	"url": "https://www.youtube.com/watch?v=gqIXmbgihuQ"
+
+},
+"Fight Club Opening Sequence": {
+	"filmTitle": "Fight Club Opening Sequence",
+	"week":	10,
+	"url": "https://www.youtube.com/watch?v=Ze9-wg9k7AU"
+
+}
+}
