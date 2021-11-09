@@ -1,11 +1,15 @@
 # film-watch-options
 
+**Under construction**
+
 Web component that provides different representations to watch a film. The representation is based on the
 - the tag content - the film's name
-    e.g. `<film-watch-options sheetId="">The String</film-watch-options>`
-- a Google Spreadsheet - containing a list of films and availability
+    e.g. `<film-watch-options jsonurl="">The String</film-watch-options>`
+- and a JSON file (located at _jsonurl_) that specifies if and how the film is available.
 
-Still very much a work in progress
+Still very much a work in progress.
+
+The rest of this is boilerplate for dev.
 
 ## Setup
 
