@@ -286,7 +286,7 @@ class filmViewFactory {
         rx: /^.*dailymotion.com\/video\/([^_]+)_.*$/g,
         tmpl: url.replace('_URL_', 'dailymotion.com/embed/video/$1'),
         source: 'DailyMotion'
-      }
+      },
       {
         rx: /^.*microsoftstream.com\/video\/([^\/]+)$/g,
         tmpl: url.replace('_URL_', 'web.microsoftstream.com/embed/video/$1'),
