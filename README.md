@@ -10,6 +10,8 @@ Web component that provides different representations to watch a film. The repre
 
 Still very much a work in progress.
 
+The dev/index.html file gives some examples (including broken examples)
+
 ## How it works
 
 A data source is specified (e.g. a JSON file's URL). The data source is essentially a hash from film name to a URL online where the film can be found. The <film-watch-options> component uses a singleton to retrieve and cache the data source.
