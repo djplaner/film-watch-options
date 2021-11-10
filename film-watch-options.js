@@ -250,7 +250,7 @@ class filmViewFactory {
       Stream: html`
       <p class="gu_addedAdvice" style="font-size:80%">
       <span class="gu_adviceLabel">Alternative video source:</span> 
-      <span class="gu_adviceValue"><a href="${this.film.filmUrl}" target="_new">visit video's page</a></span><br />
+      <span class="gu_adviceValue"><a href="${this.film.filmUrl}" target="_blank">visit video's page</a></span><br />
       <span class="gu_adviceLabel">Help with video:</span> <span class="gu_adviceValue"><a href="https://docs.microsoft.com/en-us/stream/portal-watch">Watch videos on Microsoft Stream</a></span>
       </p>`
     };
@@ -262,7 +262,7 @@ class filmViewFactory {
         <div class="instructions">
           <h3>${this.film.filmNameEsc}</h3>
           <p>
-            You can watch <a href="${this.film.filmUrl}" target="_new"><em>${this.film.filmNameEsc}</em> on
+            You can watch <a href="${this.film.filmUrl}" target="_blank"><em>${this.film.filmNameEsc}</em> on
             Kanopy</a>
           </p>
         </div>
@@ -279,7 +279,7 @@ class filmViewFactory {
         source: 'archive.org',
       },
       {
-        rx: /^.*dailymotion.com\/video\/([^_]+)_.*$/g,
+        rx: /^.*dailymotion.com\/video\/([^_]+)$/g,
         tmpl: url.replace('_URL_', 'dailymotion.com/embed/video/$1'),
         source: 'DailyMotion'
       },

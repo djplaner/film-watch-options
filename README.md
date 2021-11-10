@@ -3,6 +3,7 @@
 **Under construction**
 
 Web component that provides different representations to watch a film. The representation is based on the
+
 - the tag content - the film's name
     e.g. `<film-watch-options jsonurl="">The String</film-watch-options>`
 - and a JSON file (located at _jsonurl_) that specifies if and how the film is available.
@@ -14,6 +15,7 @@ Still very much a work in progress.
 A data source is specified (e.g. a JSON file's URL). The data source is essentially a hash from film name to a URL online where the film can be found. The <film-watch-options> component uses a singleton to retrieve and cache the data source.
 
 On render, the component translates the film name provided in the web component into an embedded video player. The component currently works for (fairly limited, specific) video URLs from 
+
 - Web Archive (archive.org)
 - DailyMotion (dailymotion.com)
 - Microsoft stream (microsoftstream.com)
