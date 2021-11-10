@@ -26,6 +26,12 @@ On render, the component translates the film name provided in the web component 
 - Support other means of specifying the data source (CSV?)
 - Generally tidy everything up
 
+Name recognition
+- be case insensitive?
+
+Views
+- have attributes to specify different types of views (e.g. small, just a link)
+
 ## Setup
 
 Install dependencies:
