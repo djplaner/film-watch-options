@@ -271,6 +271,10 @@ class filmViewFactory {
     }
     let url = 'https://_URL_';
     let cls = 'class="embedded-media"';
+    <div style="position:relative;padding-bottom:56.25%;height:0;overflow:hidden;"> 
+    <iframe style="width:100%;height:100%;position:absolute;left:0px;top:0px;overflow:hidden" 
+    frameborder="0" type="text/html" src="https://www.dailymotion.com/embed/video/x2c0473" 
+    width="100%" height="100%" allowfullscreen > </iframe> </div>
 
     let converts = [
       {
@@ -278,6 +282,11 @@ class filmViewFactory {
         tmpl: url.replace('_URL_', 'archive.org/embed/$1'),
         source: 'archive.org',
       },
+      {
+        rx: /^.*dailymotion.com\/video\/([^_]+)_.*$/g,
+        tmpl: url.replace('_URL_', 'dailymotion.com/embed/video/$1'),
+        source: 'DailyMotion'
+      }
       {
         rx: /^.*microsoftstream.com\/video\/([^\/]+)$/g,
         tmpl: url.replace('_URL_', 'web.microsoftstream.com/embed/video/$1'),
