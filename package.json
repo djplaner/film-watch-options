@@ -1,6 +1,6 @@
 {
   "name": "@djplaner/film-watch-options",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "description": "Film Watch Options - Display how to watch a film based on JSON data source",
   "main": "film-watch-options.js",
   "module": "film-watch-options.js",
